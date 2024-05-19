@@ -1,12 +1,12 @@
-# Bookyy Book-Store
+# Shoopy E-commerce Web app
 
-**This project showcases a responsive web application built with ReactJS, Redux Toolkit, and custom CSS, provides a user-friendly experience for book enthusiasts.**
+**This project showcases a responsive web application built with ReactJS, Redux Toolkit, and custom CSS, provides a user-friendly experience for the best shopping experience.**
 
 ### Features
 
-* **Effortless Shopping Cart:** Add and remove books from your cart with ease, streamlining the book purchasing process.
-* **Search Functionality:** Discover your next read by searching for authors and book titles in the dedicated search section.
-* **Customizable Browsing:** Navigate through a diverse selection of books using the intuitive slider, built entirely from scratch.
+* **Effortless Shopping Cart:** Add and remove items from your cart with ease, streamlining the item purchasing process.
+* **Search Functionality:** Discover your next read by searching for items in the dedicated search section.
+* **Customizable Browsing:** Navigate through a diverse selection of items using the intuitive slider, built entirely from scratch.
 * **Responsive Design:** Ensures optimal user experience across all devices.
 
 ### Built With
