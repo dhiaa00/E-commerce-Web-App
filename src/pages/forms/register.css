@@ -1,0 +1,44 @@
+.register-login {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-login h1 {
+  color: teal;
+  font-size: 30px;
+}
+.register-login input {
+  width: 400px;
+  padding: 10px 5px;
+  font-size: 20px;
+  border: 2px solid teal;
+}
+@media (max-width: 480px) {
+  .register-login input {
+    width: 100%;
+  }
+}
+.register-login button {
+  padding: 10px 5px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 30px;
+  width: 80%;
+  align-self: center;
+  cursor: pointer;
+}
+.register-login .have-account {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  margin-top: -15px;
+  align-self: center;
+}
+.register-login .have-account a {
+  color: teal;
+  font-weight: 700;
+}

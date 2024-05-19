@@ -1,0 +1,92 @@
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+}
+.book-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5%;
+}
+.book-content img {
+  width: 25%;
+  background-color: white;
+  padding: 20px;
+}
+.book-content .book-content-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  color: gray;
+  font-weight: 700;
+}
+.book-content-details h1 {
+  color: black;
+}
+.book-content-details p {
+  font-size: 18px;
+}
+.book-content-details p span {
+  color: teal;
+}
+.book-content-details .model-info {
+  display: flex;
+}
+.book .book-description {
+  font-size: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: black;
+}
+.book .book-description p {
+  font-size: 18px;
+  color: gray;
+  font-weight: 600;
+}
+.book .additional-details {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.book .additional-details .additional-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: teal;
+  gap: 10px;
+  font-size: 20px;
+}
+.book .additional-details .additional-detail h2 {
+  font-size: 20px;
+  color: black;
+}
+.book .additional-details .additional-detail i {
+  font-size: 40px;
+}
+@media (max-width: 920px) {
+  .book-content img {
+    width: 40%;
+  }
+  .book-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-content .book-content-details {
+    width: 80%;
+    text-align: center;
+  }
+  .book-content-details .model-info {
+    justify-content: center;
+  }
+}
+@media (max-width: 620px) {
+  .book-content img {
+    width: 70%;
+  }
+}

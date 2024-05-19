@@ -1,0 +1,69 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.contact-ways {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-ways .contact-section {
+  width: 30%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+.contact-ways .contact-section i,
+.contact-ways .contact-section h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.contact-ways .contact-section h2 {
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .contact-ways .email p {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+form h2 {
+  text-align: center;
+}
+form .name-subject-mail {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+form .name-subject-mail input {
+  padding: 10px;
+  width: 30%;
+  font-size: 20px;
+  border: 2px solid gray;
+}
+form #contact-message {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+form .contact-send-button {
+  width: 70px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}

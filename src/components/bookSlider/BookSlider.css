@@ -1,0 +1,235 @@
+.book-slider {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  min-height: 600px;
+  margin-bottom: 60px;
+}
+.book-slider .bi-chevron-left {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 25px;
+  color: white;
+  background-color: #666;
+  padding: 15px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.book-slider .bi-chevron-right {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  font-size: 25px;
+  color: white;
+  background-color: #666;
+  padding: 15px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.book-slider h2 {
+  color: rgb(25, 118, 210);
+  font-size: 30px;
+  font-weight: 600;
+  width: fit-content;
+  border-bottom: 2px solid rgb(25, 118, 210);
+  margin-bottom: 20px;
+}
+.book-slider-container {
+  display: flex;
+  position: absolute;
+  flex-wrap: nowrap;
+  top: 100px;
+  gap: 20px;
+  transition: 1s;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px 20px;
+  height: 450px;
+  border: 1px solid black;
+}
+.book-card img {
+  width: 190px;
+  height: 290px;
+  align-self: center;
+}
+.book-card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.book-card .book-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.book-card .info h3 {
+  font-size: 15px;
+  margin: 10px 0 0;
+  width: fit-content;
+}
+.bi-star-half,
+.bi-star-fill {
+  color: orange;
+}
+.bi-star-half,
+.bi-star-fill,
+.bi-star {
+  padding: 0 2px;
+}
+.book-card .review {
+  display: flex;
+  align-self: center;
+}
+.book-card .price {
+  align-self: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(216, 0, 0);
+}
+.book-card .price-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.book-card .card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 25px;
+  width: 100%;
+  color: #444;
+  border-top: 1px solid black;
+}
+.book-card .card-footer .bi-eye-fill {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.book-card .card-footer .bi-eye-fill:hover {
+  color: var(--primary-color);
+}
+.book-card .card-footer .bi-cart-plus {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.book-card .card-footer .bi-cart-plus:hover {
+  color: var(--primary-color);
+}
+
+/* book model styling */
+
+.model-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-content {
+  position: relative;
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  animation: popUp 1s ease-in-out;
+}
+.model-content img {
+  height: 100%;
+}
+.model-content .model-infos {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.model-content .model-info {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+.model-content .model-info span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.model-info input {
+  width: 60px;
+  padding: 5px;
+}
+.model-info .add-to-cart-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(119, 255, 119);
+  margin-left: 5%;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  transition: 0.3s;
+}
+.model-info .add-to-cart-button:hover {
+  background-color: rgb(0, 255, 0);
+}
+.model-content .see-more-button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.model-content .bi-x-lg {
+  position: absolute;
+  cursor: pointer;
+  background-color: red;
+  padding: 13px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+}
+@keyframes popUp {
+  0% {
+    width: 0vw;
+    height: 0vh;
+  }
+  80% {
+    width: 65vw;
+    height: 85vh;
+  }
+  100% {
+    width: 60vw;
+    height: 80vh;
+  }
+}

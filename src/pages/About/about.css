@@ -1,0 +1,19 @@
+.about-section {
+  background-color: var(--main-color);
+  padding: 10px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: black;
+}
+.about-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #555;
+  width: fit-content;
+  border-bottom: 3px solid #555;
+}
+.about-section p {
+  font-weight: 600;
+  padding: 10px 0;
+}
